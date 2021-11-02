@@ -1,419 +1,158 @@
-|||||-Çàìåğû âğåìåíè íà÷àòû: Tue Oct  5 00:35:05 2021-|||||
+|||||-Çàìåğû âğåìåíè íà÷àòû: Tue Nov  2 08:59:32 2021-|||||
 		ÏÎÒÎÊÎÂ: 1
 
 	ÈÒÅĞÀÖÈÉ: 125000
 
-Single			3.15788e-05 ms.
-Static			7.36842e-05 ms.
-Dynamic			1.13381 ms.
-Guided			0.339689 ms.
-Sections			0.675994 ms.
-ParSer			1.50439 ms.
+|||||-Çàìåğû âğåìåíè íà÷àòû: Tue Nov  2 08:59:32 2021-|||||
+		ÏÎÒÎÊÎÂ: 1
+
+	ÈÒÅĞÀÖÈÉ: 125000
+
+Single			0.0315792 ms.
+Static			0.0578952 ms.
+Dynamic			174.526 ms.
+Guided			166.721 ms.
+Sections			353.284 ms.
+ParSer			1431.77 ms.
 
 	ÈÒÅĞÀÖÈÉ: 250000
 
-Single			2.63158e-05 ms.
-Static			4.2105e-05 ms.
-Dynamic			2.22168 ms.
-Guided			0.69054 ms.
-Sections			1.39282 ms.
-ParSer			3.00864 ms.
+Single			0.0368416 ms.
+Static			0.0842104 ms.
+Dynamic			307.733 ms.
+Guided			303.037 ms.
+Sections			691.34 ms.
+ParSer			2809.32 ms.
 
 	ÈÒÅĞÀÖÈÉ: 375000
 
-Single			3.6842e-05 ms.
-Static			7.36842e-05 ms.
-Dynamic			3.21821 ms.
-Guided			1.00512 ms.
-Sections			2.0714 ms.
-ParSer			4.41121 ms.
+Single			0.0368424 ms.
+Static			0.0947368 ms.
+Dynamic			459.121 ms.
+Guided			452.86 ms.
+Sections			1012.31 ms.
+ParSer			4112.44 ms.
 
 	ÈÒÅĞÀÖÈÉ: 500000
 
-Single			2.63158e-05 ms.
-Static			3.6842e-05 ms.
-Dynamic			4.42919 ms.
-Guided			1.33861 ms.
-Sections			2.76388 ms.
-ParSer			5.87252 ms.
+Single			0.0315792 ms.
+Static			0.0421056 ms.
+Dynamic			600.905 ms.
+Guided			607.143 ms.
+Sections			1361.16 ms.
+ParSer			5454.4 ms.
 
 		ÏÎÒÎÊÎÂ: 2
 
 	ÈÒÅĞÀÖÈÉ: 125000
 
-Single			3.6842e-05 ms.
-Static			0.00105263 ms.
-Dynamic			1.11656 ms.
-Guided			0.9779 ms.
-Sections			0.501864 ms.
-ParSer			2.27214 ms.
+Single			0.026316 ms.
+Static			1.3579 ms.
+Dynamic			78.9556 ms.
+Guided			75.8588 ms.
+Sections			250.608 ms.
+ParSer			1953.22 ms.
 
 	ÈÒÅĞÀÖÈÉ: 250000
 
-Single			0 ms.
-Static			0.000292857 ms.
-Dynamic			2.21286 ms.
-Guided			1.14094 ms.
-Sections			1.27977 ms.
-ParSer			4.24761 ms.
+Single			0.0315784 ms.
+Static			1.44118 ms.
+Dynamic			159.382 ms.
+Guided			156.676 ms.
+Sections			388.05 ms.
+ParSer			3946.29 ms.
 
 	ÈÒÅĞÀÖÈÉ: 375000
 
-Single			3.6842e-05 ms.
-Static			0.0003 ms.
-Dynamic			3.27908 ms.
-Guided			2.27711 ms.
-Sections			1.04498 ms.
-ParSer			7.00245 ms.
+Single			0.0388892 ms.
+Static			0.536842 ms.
+Dynamic			231.456 ms.
+Guided			230.916 ms.
+Sections			712.315 ms.
+ParSer			5653.74 ms.
 
 	ÈÒÅĞÀÖÈÉ: 500000
 
-Single			0 ms.
-Static			0.000223529 ms.
-Dynamic			4.91259 ms.
-Guided			2.67928 ms.
-Sections			2.14191 ms.
-ParSer			8.70088 ms.
+Single			0.052632 ms.
+Static			2.13684 ms.
+Dynamic			313.069 ms.
+Guided			307.611 ms.
+Sections			862.909 ms.
+ParSer			8060.57 ms.
 
 		ÏÎÒÎÊÎÂ: 3
 
 	ÈÒÅĞÀÖÈÉ: 125000
 
-Single			3.1579e-05 ms.
-Static			0.0013 ms.
-Dynamic			1.17617 ms.
-Guided			1.01546 ms.
-Sections			0.637857 ms.
-ParSer			2.95922 ms.
+Single			0.0368424 ms.
+Static			2.17368 ms.
+Dynamic			58.8437 ms.
+Guided			84.9267 ms.
+Sections			507.071 ms.
+ParSer			2577.74 ms.
 
 	ÈÒÅĞÀÖÈÉ: 250000
 
-Single			3.68424e-05 ms.
-Static			0.00111053 ms.
-Dynamic			2.41489 ms.
-Guided			1.95456 ms.
-Sections			0.99654 ms.
-ParSer			6.1988 ms.
+Single			0.0526312 ms.
+Static			4.61875 ms.
+Dynamic			108.5 ms.
+Guided			108.013 ms.
+Sections			1136.5 ms.
+ParSer			5244.63 ms.
 
 	ÈÒÅĞÀÖÈÉ: 375000
 
-Single			3.68422e-05 ms.
-Static			0.000985715 ms.
-Dynamic			4.01029 ms.
-Guided			3.26391 ms.
-Sections			1.55013 ms.
-ParSer			11.2465 ms.
+Single			0.0421048 ms.
+Static			4.14445 ms.
+Dynamic			187.814 ms.
+Guided			158.869 ms.
+Sections			1445.64 ms.
+ParSer			8497.21 ms.
 
 	ÈÒÅĞÀÖÈÉ: 500000
 
-Single			3.1579e-05 ms.
-Static			0.00034375 ms.
-Dynamic			4.88378 ms.
-Guided			4.47257 ms.
-Sections			3.03861 ms.
-ParSer			12.94 ms.
+Single			0.0388892 ms.
+Static			1.95 ms.
+Dynamic			226.838 ms.
+Guided			216.636 ms.
+Sections			2417.62 ms.
+ParSer			11013.3 ms.
 
 		ÏÎÒÎÊÎÂ: 4
 
 	ÈÒÅĞÀÖÈÉ: 125000
 
-Single			4.21052e-05 ms.
-Static			0.0011 ms.
-Dynamic			1.81883 ms.
-Guided			0.918817 ms.
-Sections			0.5316 ms.
-ParSer			4.0006 ms.
+Single			0.0421048 ms.
+Static			1.52105 ms.
+Dynamic			57.8421 ms.
+Guided			43.0273 ms.
+Sections			509.723 ms.
+ParSer			3817.4 ms.
 
 	ÈÒÅĞÀÖÈÉ: 250000
 
-Single			2.63158e-05 ms.
-Static			0.000958333 ms.
-Dynamic			2.64433 ms.
-Guided			2.05086 ms.
-Sections			1.30466 ms.
-ParSer			10.6339 ms.
+Single			0.0368416 ms.
+Static			2.26316 ms.
+Dynamic			110.058 ms.
+Guided			81.4333 ms.
+Sections			982.85 ms.
+ParSer			8348.1 ms.
 
 	ÈÒÅĞÀÖÈÉ: 375000
 
-Single			4.21052e-05 ms.
-Static			0.000981818 ms.
-Dynamic			6.27899 ms.
-Guided			3.07567 ms.
-Sections			2.25425 ms.
-ParSer			17.5091 ms.
+Single			0.0368424 ms.
+Static			4.40526 ms.
+Dynamic			118.57 ms.
+Guided			119.819 ms.
+Sections			1670.47 ms.
+ParSer			13357.1 ms.
 
 	ÈÒÅĞÀÖÈÉ: 500000
 
-Single			4.21054e-05 ms.
-Static			0.001275 ms.
-Dynamic			6.68486 ms.
-Guided			4.28798 ms.
-Sections			3.04154 ms.
-ParSer			22.2115 ms.
-
-|||||-Çàìåğû âğåìåíè íà÷àòû: Mon Nov  1 19:00:51 2021-|||||
-		ÏÎÒÎÊÎÂ: 1
-
-	ÈÒÅĞÀÖÈÉ: 1250000
-
-Single			2.92929e-05 ms.
-Static			4.34344e-05 ms.
-Dynamic			10.8481 ms.
-Guided			3.34934 ms.
-Sections			7.1776 ms.
-ParSer			14.6702 ms.
-
-	ÈÒÅĞÀÖÈÉ: 2500000
-
-Single			0 ms.
-Static			0 ms.
-Dynamic			21.163 ms.
-Guided			6.66989 ms.
-Sections			14.3555 ms.
-ParSer			29.3355 ms.
-
-	ÈÒÅĞÀÖÈÉ: 3750000
-
-Single			0 ms.
-Static			0 ms.
-Dynamic			31.6457 ms.
-Guided			10.0093 ms.
-Sections			21.5526 ms.
-ParSer			43.9999 ms.
-
-	ÈÒÅĞÀÖÈÉ: 5000000
-
-Single			0 ms.
-Static			0 ms.
-Dynamic			42.689 ms.
-Guided			13.3423 ms.
-Sections			29.9357 ms.
-ParSer			58.667 ms.
-
-		ÏÎÒÎÊÎÂ: 2
-
-	ÈÒÅĞÀÖÈÉ: 1250000
-
-Single			0 ms.
-Static			0.00104747 ms.
-Dynamic			11.0374 ms.
-Guided			6.52676 ms.
-Sections			3.68818 ms.
-ParSer			21.4987 ms.
-
-	ÈÒÅĞÀÖÈÉ: 2500000
-
-Single			0 ms.
-Static			0.00163696 ms.
-Dynamic			24.6266 ms.
-Guided			14.9099 ms.
-Sections			7.47453 ms.
-ParSer			48.6088 ms.
-
-	ÈÒÅĞÀÖÈÉ: 3750000
-
-Single			0 ms.
-Static			0.000905063 ms.
-Dynamic			37.3559 ms.
-Guided			23.1993 ms.
-Sections			10.9588 ms.
-ParSer			68.2811 ms.
-
-	ÈÒÅĞÀÖÈÉ: 5000000
-
-Single			0 ms.
-Static			0.000192958 ms.
-Dynamic			46.9235 ms.
-Guided			31.7863 ms.
-Sections			15.1555 ms.
-ParSer			93.9284 ms.
-
-		ÏÎÒÎÊÎÂ: 3
-
-	ÈÒÅĞÀÖÈÉ: 1250000
-
-Single			0 ms.
-Static			0.00113939 ms.
-Dynamic			13.5332 ms.
-Guided			10.1931 ms.
-Sections			5.58972 ms.
-ParSer			40.6095 ms.
-
-	ÈÒÅĞÀÖÈÉ: 2500000
-
-Single			0 ms.
-Static			0.00107901 ms.
-Dynamic			37.2229 ms.
-Guided			20.0642 ms.
-Sections			12.2369 ms.
-ParSer			83.2949 ms.
-
-	ÈÒÅĞÀÖÈÉ: 3750000
-
-Single			0 ms.
-Static			0.000655952 ms.
-Dynamic			43.5506 ms.
-Guided			31.437 ms.
-Sections			19.2913 ms.
-ParSer			126.233 ms.
-
-	ÈÒÅĞÀÖÈÉ: 5000000
-
-|||||-Çàìåğû âğåìåíè íà÷àòû: Mon Nov  1 19:03:48 2021-|||||
-		ÏÎÒÎÊÎÂ: 1
-
-	ÈÒÅĞÀÖÈÉ: 125000
-
-|||||-Çàìåğû âğåìåíè íà÷àòû: Mon Nov  1 19:07:54 2021-|||||
-		ÏÎÒÎÊÎÂ: 1
-
-	ÈÒÅĞÀÖÈÉ: 125000
-
-Single			3.10345e-05 ms.
-Static			4.82757e-05 ms.
-Dynamic			1.21886 ms.
-Guided			0.338379 ms.
-Sections			0.679138 ms.
-ParSer			1.46662 ms.
-
-	ÈÒÅĞÀÖÈÉ: 250000
-
-Single			2.75862e-05 ms.
-Static			4.48276e-05 ms.
-Dynamic			2.57942 ms.
-Guided			0.680296 ms.
-Sections			1.35244 ms.
-ParSer			2.96565 ms.
-
-	ÈÒÅĞÀÖÈÉ: 375000
-
-Single			3.10345e-05 ms.
-Static			6.55172e-05 ms.
-Dynamic			3.87865 ms.
-Guided			1.01705 ms.
-Sections			2.11893 ms.
-ParSer			4.46747 ms.
-
-	ÈÒÅĞÀÖÈÉ: 500000
-
-Single			4.13791e-05 ms.
-Static			7.50001e-05 ms.
-Dynamic			4.98475 ms.
-Guided			1.38057 ms.
-Sections			2.8999 ms.
-ParSer			5.87804 ms.
-
-		ÏÎÒÎÊÎÂ: 2
-
-	ÈÒÅĞÀÖÈÉ: 125000
-
-Single			4.13792e-05 ms.
-Static			0.00097931 ms.
-Dynamic			1.14632 ms.
-Guided			0.9919 ms.
-Sections			0.6632 ms.
-ParSer			2.13364 ms.
-
-	ÈÒÅĞÀÖÈÉ: 250000
-
-Single			3.4483e-05 ms.
-Static			0.000291667 ms.
-Dynamic			2.24501 ms.
-Guided			1.98109 ms.
-Sections			0.882987 ms.
-ParSer			4.53218 ms.
-
-	ÈÒÅĞÀÖÈÉ: 375000
-
-Single			0 ms.
-Static			0.000199999 ms.
-Dynamic			3.36546 ms.
-Guided			2.00127 ms.
-Sections			1.50708 ms.
-ParSer			6.73523 ms.
-
-	ÈÒÅĞÀÖÈÉ: 500000
-
-Single			1.72414e-05 ms.
-Static			0.000236 ms.
-Dynamic			4.56612 ms.
-Guided			4.36267 ms.
-Sections			1.83915 ms.
-ParSer			8.56878 ms.
-
-		ÏÎÒÎÊÎÂ: 3
-
-	ÈÒÅĞÀÖÈÉ: 125000
-
-Single			0 ms.
-Static			0.00102759 ms.
-Dynamic			1.22715 ms.
-Guided			1.11692 ms.
-Sections			0.763448 ms.
-ParSer			3.78382 ms.
-
-	ÈÒÅĞÀÖÈÉ: 250000
-
-Single			3.10345e-05 ms.
-Static			0.000995238 ms.
-Dynamic			2.56709 ms.
-Guided			2.04942 ms.
-Sections			1.32197 ms.
-ParSer			7.40918 ms.
-
-	ÈÒÅĞÀÖÈÉ: 375000
-
-Single			3.44828e-05 ms.
-Static			0.0011 ms.
-Dynamic			4.49432 ms.
-Guided			3.12993 ms.
-Sections			2.12982 ms.
-ParSer			11.1927 ms.
-
-	ÈÒÅĞÀÖÈÉ: 500000
-
-Single			0 ms.
-Static			0.0003 ms.
-Dynamic			5.05314 ms.
-Guided			4.11542 ms.
-Sections			2.62417 ms.
-ParSer			14.5756 ms.
-
-		ÏÎÒÎÊÎÂ: 4
-
-	ÈÒÅĞÀÖÈÉ: 125000
-
-Single			0 ms.
-Static			0.00194828 ms.
-Dynamic			1.28609 ms.
-Guided			0.998018 ms.
-Sections			0.596613 ms.
-ParSer			6.17957 ms.
-
-	ÈÒÅĞÀÖÈÉ: 250000
-
-Single			0 ms.
-Static			0.000975 ms.
-Dynamic			2.89689 ms.
-Guided			2.13728 ms.
-Sections			1.82672 ms.
-ParSer			11.8567 ms.
-
-	ÈÒÅĞÀÖÈÉ: 375000
-
-Single			3.92859e-05 ms.
-Static			0.000825 ms.
-Dynamic			4.15207 ms.
-Guided			3.15985 ms.
-Sections			3.1041 ms.
-ParSer			17.984 ms.
-
-	ÈÒÅĞÀÖÈÉ: 500000
-
-Single			2.41379e-05 ms.
-Static			0.00100952 ms.
-Dynamic			5.40581 ms.
-Guided			4.22597 ms.
-Sections			2.96369 ms.
-ParSer			24.5537 ms.
+Single			0.0421056 ms.
+Static			2.77647 ms.
+Dynamic			208.817 ms.
+Guided			159.989 ms.
+Sections			1352.23 ms.
+ParSer			17045.7 ms.
 

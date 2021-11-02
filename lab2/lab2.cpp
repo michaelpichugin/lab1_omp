@@ -66,7 +66,7 @@ double Pi_Single(long num_steps)
 	double step, pi, x, sum = 0.0;
 	int i;
 	step = 1.0 / (double)num_steps;
-#pragma omp single
+#pragma omp single 
 	{
 		for (i = 0; i < num_steps; i++)
 		{
@@ -78,70 +78,67 @@ double Pi_Single(long num_steps)
 	//printf("Pi = %f\n", pi);
 
 	double t_end = omp_get_wtime();
-	return t_end - t_start;
+	return (t_end - t_start) * 1000;
 }
 
 double Pi_SheduleStatic(long num_steps)
 {
 	double t_start = omp_get_wtime();
 
-	double step, pi, x, sum = 0.0;
-	int i;
+	double step, pi, sum = 0.0;
 	step = 1.0 / (double)num_steps;
 
-#pragma omp parallel for schedule(static, omp_get_num_threads())
-		for (i = 0; i < num_steps; i++)
+#pragma omp parallel for schedule(static, 5000) reduction(+:sum)
+		for (int i = 0; i < num_steps; i++)
 		{
-			x = (i + 0.5) * step;
+			double x = (i + 0.5) * step;
 			sum = sum + 4.0 / (1.0 + x * x);
 		}
 	pi = step * sum;
 	//printf("Pi = %f\n", pi);
 
 	double t_end = omp_get_wtime();
-	return t_end - t_start;
+	return (t_end - t_start) * 1000;
 }
 
 double Pi_SheduleDynamic(long num_steps)
 {
 	double t_start = omp_get_wtime();
 
-	double step, pi, x, sum = 0.0;
-	int i;
+	double step, pi, sum = 0.0;
 	step = 1.0 / (double)num_steps;
 
-#pragma omp parallel for schedule(dynamic)
-	for (i = 0; i < num_steps; i++)
+#pragma omp parallel for schedule(dynamic, 5000) reduction(+:sum)
+	for (int i = 0; i < num_steps; i++)
 	{
-		x = (i + 0.5) * step;
+		double x = (i + 0.5) * step;
 		sum = sum + 4.0 / (1.0 + x * x);
 	}
 	pi = step * sum;
 	//printf("Pi = %f\n", pi);
 
 	double t_end = omp_get_wtime();
-	return t_end - t_start;
+	return (t_end - t_start) * 1000;
 }
 
 double Pi_SheduleGuided(long num_steps)
 {
 	double t_start = omp_get_wtime();
 
-	double step, pi, x, sum = 0.0;
-	int i;
+	double step, pi, sum = 0.0;
 	step = 1.0 / (double)num_steps;
 
-#pragma omp parallel for schedule(guided)
-	for (i = 0; i < num_steps; i++)
+#pragma omp parallel for schedule(guided, 5000) reduction(+:sum)
+	for (int i = 0; i < num_steps; i++)
 	{
-		x = (i + 0.5) * step;
+		double x = (i + 0.5) * step;
 		sum = sum + 4.0 / (1.0 + x * x);
 	}
 	pi = step * sum;
 	//printf("Pi = %f\n", pi);
 
 	double t_end = omp_get_wtime();
-	return t_end - t_start;
+	return (t_end - t_start) * 1000;
 }
 
 double Pi_Section(long num_steps)
@@ -151,32 +148,40 @@ double Pi_Section(long num_steps)
 	double step, pi, x, sum = 0.0;
 	int i;
 	step = 1.0 / (double)num_steps;
+	int thr;
+#pragma omp parallel
+	{
+		thr = omp_get_num_threads();
+	}
+	long p1 = num_steps / thr, 
+		p2 = num_steps * 2 / thr, 
+		p3 = num_steps * 3 / thr;
 
 #pragma omp parallel sections
 	{
 #pragma omp section
-		for (i = 0; i < num_steps / omp_get_num_threads(); i++)
+		for (i = 0; i < p1; i++)
 		{
 			x = (i + 0.5) * step;
 			sum = sum + 4.0 / (1.0 + x * x);
 		}
 #pragma omp section
 		if (omp_get_num_threads() > 1)
-			for (i = num_steps / omp_get_num_threads(); i < num_steps * 2 / omp_get_num_threads(); i++)
+			for (i = p1; i < p2; i++)
 			{
 				x = (i + 0.5) * step;
 				sum = sum + 4.0 / (1.0 + x * x);
 			}
 #pragma omp section
 		if (omp_get_num_threads() > 2)
-			for (i = num_steps * 2 / omp_get_num_threads(); i < num_steps * 3 / omp_get_num_threads(); i++)
+			for (i = p2; i < p3; i++)
 			{
 				x = (i + 0.5) * step;
 				sum = sum + 4.0 / (1.0 + x * x);
 			}
 #pragma omp section
 		if (omp_get_num_threads() > 3)
-			for (i = num_steps * 3 / omp_get_num_threads(); i < num_steps * 4 / omp_get_num_threads(); i++)
+			for (i = p3; i < num_steps; i++)
 			{
 				x = (i + 0.5) * step;
 				sum = sum + 4.0 / (1.0 + x * x);
@@ -187,7 +192,7 @@ double Pi_Section(long num_steps)
 	//printf("Pi = %f\n", pi);
 
 	double t_end = omp_get_wtime();
-	return t_end - t_start;
+	return (t_end - t_start) * 1000;
 }
 
 double Pi_ParSer(long num_steps)
@@ -201,14 +206,16 @@ double Pi_ParSer(long num_steps)
 		for (i = 0; i < num_steps; i++)
 		{
 #pragma omp critical
-			x = (i + 0.5) * step;
-			sum = sum + 4.0 / (1.0 + x * x);
+			{
+				x = (i + 0.5) * step;
+				sum = sum + 4.0 / (1.0 + x * x);
+			}
 		}
 	pi = step * sum;
 	//printf("Pi = %f\n", pi);
 
 	double t_end = omp_get_wtime();
-	return t_end - t_start;
+	return (t_end - t_start) * 1000;
 }
 
 double TestIter(void* Funct, long size, int iterations)
@@ -301,7 +308,7 @@ int main()
 				out << "\tИТЕРАЦИЙ: " << j << std::endl << std::endl;
 			out.close();
 
-			test_functions(Functions, function_names, j, 30);
+			test_functions(Functions, function_names, j, 20);
 		}
 	}
 	std::cout << "Замеры времени выполнения функций выполнены, все данные записаны в файл result.txt." << std::endl;
